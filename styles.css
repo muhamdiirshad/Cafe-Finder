@@ -1,0 +1,22 @@
+:root {
+  --sidebar-w: 360px;
+  --gap: 12px;
+  font-family: Arial, sans-serif;
+}
+
+* { box-sizing: border-box; }
+body,html { height:100%; margin:0; }
+header { padding:12px 16px; border-bottom:1px solid #eee; background:#fff; }
+
+.container { display:flex; height:calc(100% - 64px); gap:var(--gap); }
+.sidebar { width:var(--sidebar-w); padding:12px; overflow:auto; background:#f9f9f9; border-right:1px solid #eee; }
+.map { flex:1; height:100%; }
+
+.search-wrap { display:flex; gap:8px; margin-bottom:12px; }
+#search { flex:1; padding:8px; border:1px solid #ccc; border-radius:4px; }
+#locBtn { padding:8px; border-radius:4px; border:1px solid #ccc; background:#fff; cursor:pointer; }
+
+.controls { margin-bottom:12px; font-size:14px; }
+.places-list { list-style:none; padding:0; margin:0; }
+.places-list li { padding:10px; border-bottom:1px solid #e6e6e6; cursor:pointer; }
+.places-list li:hover { background:#fff; }
